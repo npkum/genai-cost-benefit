@@ -149,8 +149,8 @@ footer {
   font-size: 0.9em;
   padding: 0.2em;
   margin-left: 0.2em;
-  background: #fff;
-  color: #fff;
+  background: #; /* background: #fff; */
+  color: #;		/* color: #fff */
   border: none;
   cursor: pointer;
 }
