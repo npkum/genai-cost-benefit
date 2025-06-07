@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategic Use of Generative AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Strategic Use of Generative AI</h1>
+    <h4>Why Productivity ≠ Cost Benefit in GenAI</h4>
+    <div class="tts-controls">
+      <button id="listenBtn" class="listenBtn" data-target="intro,category-table,productivity,comparison,cost-benefit,summary" title="Listen to Article">🔊 Listen to Article</button>
+      <button id="pauseBtn" disabled>⏸ Pause</button>
+      <button id="resumeBtn" disabled>▶ Resume</button>
+      <button id="stopBtn" disabled>⏹ Stop</button>
+	  <span id="speechStatus"></span>
+    </div>
+  </header>
+
+
+  <nav>
+    <a href="#category-table">Use Case Categories</a>
+    <a href="#productivity">Productivity vs Cost</a>
+    <a href="#cost-benefit">Use Case Cost Benefit</a>
+    <a href="#summary">Summary</a>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <p>Generative AI use cases can be strategically grouped into three categories—Defend, Extend, and Upend, each reflecting a different level of business transformation and value realization. These categories highlight whether GenAI is being used to protect existing operations, enhance current offerings, or create entirely new business models. Understanding the focus and financial impact of each category is essential for aligning AI initiatives with organizational goals. The table below outlines these categories, illustrating how productivity gains and financial benefits vary across different types of GenAI deployments.</p>
+    </section>
+
+    <section id="category-table">
+      <div class="section-header">
+        <h2>1. Use Case Categories for Gen AI</h2>
+        <button class="listenBtn" data-target="category-table">🔊</button>
+      </div>
+      <table class="genai-categories">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Focus</th>
+            <th>Examples</th>
+            <th>Productivity vs. Financial Benefits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Category">Defend</td>
+            <td data-label="Description">Gen AI is used to protect existing models or operations by improving efficiency and reducing risks.</td>
+            <td data-label="Focus">Primarily productivity-focused</td>
+            <td data-label="Examples">
+              • Automating customer service<br>
+              • Synthetic data for testing<br>
+              • Cybersecurity enhancements
+            </td>
+            <td data-label="Productivity vs. Financial Benefits">Indirect cost reduction, less direct revenue impact</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Extend</td>
+            <td data-label="Description">Extends products or services with added value or new capabilities.</td>
+            <td data-label="Focus">Mix of productivity and financial benefits</td>
+            <td data-label="Examples">
+              • Personalized marketing<br>
+              • AI product prototyping<br>
+              • Automated content creation
+            </td>
+            <td data-label="Productivity vs. Financial Benefits">More direct impact on revenue with some efficiency benefits</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Upend</td>
+            <td data-label="Description">Disrupts or creates entirely new markets or models.</td>
+            <td data-label="Focus">Direct financial benefit focus</td>
+            <td data-label="Examples">
+              • AI healthcare platforms<br>
+              • AI-generated entertainment<br>
+              • Virtual legal advisor
+            </td>
+            <td data-label="Productivity vs. Financial Benefits">Focus on innovation, new revenue streams</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="productivity">
+      <div class="section-header">
+        <h2>2. Why Productivity Use Cases Don’t Equate to Cost Benefits</h2>
+        <button class="listenBtn" data-target="productivity">🔊</button>
+      </div>
+      <p>Productivity-focused use cases (common in Defend and some Extend scenarios) aim to save time, reduce manual effort, or improve efficiency. However, these do not always translate to cost benefits due to the following reasons:</p>
+      <h3>Implementation and Ongoing Operation Costs</h3>
+      <ul>
+        <li>Model integration (APIs, prompt engineering, fine-tuning)</li>
+        <li>Infrastructure (cloud GPUs, pipelines)</li>
+        <li>Security, governance, compliance</li>
+        <li>Compute (API usage/GPU costs)</li>
+        <li>Updates & Monitoring</li>
+      </ul>
+      <p>Even if a Gen AI tool makes employees more productive, the initial spend can dilute short-term financial ROI. Productivity gains are offset if the run-rate costs of maintaining the solution are high—especially in “defend” use cases where the business isn’t growing.</p>
+      <h3>Diminishing Returns</h3>
+      <p>Once easy wins (like drafting or summarizing or document intelligence) are automated, the marginal productivity gains shrink. Human oversight still needed for nuanced tasks (e.g., legal reviews, complex customer support) caps savings.</p>
+      <p>Productivity curves flatten quickly, limiting the long-term cost impact unless paired with transformational use cases.</p>
+      <h3>Indirect Financial Impact</h3>
+      <p>Productivity benefits often reduce effort or time, not cost or revenue. For example:</p>
+      <ul>
+        <li>Automating content creation reduces writer time but doesn’t guarantee more sales.</li>
+        <li>Gen AI-assisted code generation speeds up delivery but doesn’t ensure new features drive revenue.</li>
+        <li>Security, governance, compliance</li>
+      </ul>
+      <p>Productivity ≠ profit unless tied to direct business KPIs like conversions or revenue growth. It remains an indirect benefit.</p>
+      <h3>Comparison with Revenue-Focused Use Cases (Upend/Extend)</h3>
+      <p>Gen AI use cases tied to new revenue streams, such as:</p>
+      <ul>
+        <li>Launching personalized Gen AI driven customer experiences</li>
+        <li>Monetizing Gen AI features in SaaS offerings</li>
+      </ul>
+      <p>have clearer and more direct ROI, since the value created is incremental to the business, not just cost avoidance.</p>
+    </section>
+
+    <section id="cost-benefit">
+      <div class="section-header">
+        <h2>3. Use Case Cost Benefit Calculations</h2>
+        <button class="listenBtn" data-target="cost-benefit">🔊</button>
+      </div>
+      <p><strong>Leakage % Formula:</strong><br>Leakage % = (Total Leakage / Potential Value) × 100</p>
+
+      <h3>DEFEND – IT Service Desk Ticket Automation</h3>
+      <h4>Gen AI System Costs for Defend Use Case</h4>
+      <table class="productivity-leakage">
+        <thead>
+          <tr>
+            <th>Item Description</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Item Description">Model integration + API usage</td>
+            <td data-label="Total">$80,000</td>
+          </tr>
+          <tr>
+            <td data-label="Item Description">Infrastructure (cloud)</td>
+            <td data-label="Total">$70,000</td>
+          </tr>
+          <tr>
+            <td data-label="Item Description">Monitoring and Governance Framework</td>
+            <td data-label="Total">$50,000</td>
+          </tr>
+          <tr>
+            <td data-label="Item Description">Maintenance and Updates</td>
+            <td data-label="Total">$100,000</td>
+          </tr>
+          <tr class="invoice-total">
+            <td data-label="Item Description">Annual Total</td>
+            <td data-label="Total">$300,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="invoice-note">Sample Gen AI System cost estimate to illustrate productivity leakage calculation.</p>
+
+      <h4>Productivity Leakage Calculation</h4>
+      <table class="productivity-leakage">
+        <thead>
+          <tr>
+            <th>Use Case</th>
+            <th>Potential Value</th>
+            <th>GenAI Cost</th>
+            <th>Leakage Item</th>
+            <th>Leakage Item Cost</th>
+            <th>Total Leakage</th>
+            <th>Leakage %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Use Case">DEFEND (IT Ticket Automation)</td>
+            <td data-label="Potential Value">$400K</td>
+            <td data-label="GenAI Cost">$300K</td>
+            <td data-label="Leakage Item">Unmonetized FTE time<br>Exception handling<br>Governance<br>Diminishing returns</td>
+            <td data-label="Leakage Item Cost">$160K<br>$40K<br>$40K<br>$60K</td>
+            <td data-label="Total Leakage">$240K</td>
+            <td data-label="Leakage %">60%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>EXTEND – Personalized Marketing Campaigns</h3>
+      <h4>Gen AI System Costs for Extend Use Case</h4>
+      <table class="productivity-leakage">
+        <thead>
+          <tr>
+            <th>Item Description</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Item Description">Model integration + API usage</td>
+            <td data-label="Total">$150,000</td>
+          </tr>
+          <tr>
+            <td data-label="Item Description">Prompt tuning + campaign testing</td>
+            <td data-label="Total">$120,000</td>
+          </tr>
+          <tr>
+            <td data-label="Item Description">Integration with CMS/CRM</td>
+            <td data-label="Total">$80,000</td>
+          </tr>
+          <tr>
+            <td data-label="Item Description">Compliance and Ethical review</td>
+            <td data-label="Total">$50,000</td>
+          </tr>
+          <tr class="invoice-total">
+            <td data-label="Item Description">Annual Total</td>
+            <td data-label="Total">$400,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="invoice-note">Sample Gen AI System cost estimate to illustrate productivity leakage calculation.</p>
+
+      <h4>Productivity Leakage Calculation</h4>
+      <table class="productivity-leakage">
+        <thead>
+          <tr>
+            <th>Use Case</th>
+            <th>Potential Value</th>
+            <th>GenAI Cost</th>
+            <th>Leakage Item</th>
+            <th>Leakage Item Cost</th>
+            <th>Total Leakage</th>
+            <th>Leakage %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Use Case">EXTEND (Marketing Content)</td>
+            <td data-label="Potential Value">$6M</td>
+            <td data-label="GenAI Cost">$400K</td>
+            <td data-label="Leakage Item">Creative Oversight<br>A/B Testing<br>Compliance<br>Template fatigue</td>
+            <td data-label="Leakage Item Cost">$300K<br>$400K<br>$150K<br>$750K</td>
+            <td data-label="Total Leakage">$1.6M</td>
+            <td data-label="Leakage %">26.7%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>UPEND – AI-Powered Virtual Legal Advisor</h3>
+      <h4>Gen AI System Costs for Upend Use Case</h4>
+      <table class="productivity-leakage">
+        <thead>
+          <tr>
+            <th>Item Description</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Item Description">Fine-tuning + legal QA</td>
+            <td data-label="Total">$500,000</td>
+          </tr>
+          <tr>
+            <td data-label="Item Description">Legal compliance auditing</td>
+            <td data-label="Total">$400,000</td>
+          </tr>
+          <tr>
+            <td data-label="Item Description">Infra + prompt chaining</td>
+            <td data-label="Total">$300,000</td>
+          </tr>
+          <tr>
+            <td data-label="Item Description">Ethical monitoring/insurance</td>
+            <td data-label="Total">$200,000</td>
+          </tr>
+          <tr class="invoice-total">
+            <td data-label="Item Description">Annual Total</td>
+            <td data-label="Total">$1,400,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="invoice-note">Sample Gen AI System cost estimate to illustrate productivity leakage calculation.</p>
+
+      <h4>Productivity Leakage Calculation</h4>
+      <table class="productivity-leakage">
+        <thead>
+          <tr>
+            <th>Use Case</th>
+            <th>Potential Value</th>
+            <th>GenAI Cost</th>
+            <th>Leakage Item</th>
+            <th>Leakage Item Cost</th>
+            <th>Total Leakage</th>
+            <th>Leakage %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Use Case">UPEND (AI Legal Advisor)</td>
+            <td data-label="Potential Value">$4.44M</td>
+            <td data-label="GenAI Cost">$1.4M</td>
+            <td data-label="Leakage Item">Escalations<br>Customer support<br>Legal oversight<br>Diminishing returns</td>
+            <td data-label="Leakage Item Cost">$300K<br>$150K<br>$150K<br>$60K</td>
+            <td data-label="Total Leakage">$660K</td>
+            <td data-label="Leakage %">14.9%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="summary">
+      <div class="section-header">
+        <h2>Summary</h2>
+        <button class="listenBtn" data-target="summary">🔊</button>
+      </div>
+      <table class="genai-categories">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Use Case</th>
+            <th>Productivity Gain</th>
+            <th>Financial Benefit</th>
+            <th>GenAI System Cost</th>
+            <th>Productivity Leakage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Category">Defend</td>
+            <td data-label="Use Case">IT Ticket Automation</td>
+            <td data-label="Productivity Gain">~40% workload reduction</td>
+            <td data-label="Financial Benefit">Indirect (cost avoidance)</td>
+            <td data-label="GenAI System Cost">$300K</td>
+            <td data-label="Productivity Leakage">High (~60%)</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Extend</td>
+            <td data-label="Use Case">Marketing Campaigns</td>
+            <td data-label="Productivity Gain">5x output, +25% CTR</td>
+            <td data-label="Financial Benefit">$6M/year</td>
+            <td data-label="GenAI System Cost">$400K</td>
+            <td data-label="Productivity Leakage">Medium (~25–30%)</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Upend</td>
+            <td data-label="Use Case">AI Legal Advisor</td>
+            <td data-label="Productivity Gain">$270K/month savings</td>
+            <td data-label="Financial Benefit">$4.44M (rev + savings)</td>
+            <td data-label="GenAI System Cost">$1.4M</td>
+            <td data-label="Productivity Leakage">Low (~15%)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <button id="topBtn" class="top-link" onclick="scrollToTop()">⬆ Top of Page</button>
+
+<footer>
+    <p>Linkedin: <a href="https://www.linkedin.com/in/kumar-np" target="_blank" class="footer-link">Kumar N.P <img src="images/npk-2.png" alt="gaja" title="gaja" height="22" width="22"></a></p>
+</footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
