@@ -144,17 +144,26 @@ footer {
   margin: 0;
   display: inline-block;
 }
-
+/*
 .tts-controls button {
-  font-size: 0.9em;
+  font-size: 0.9em; 
   padding: 0.2em;
   margin-left: 0.2em;
   border: none;
   cursor: pointer;
 }
+*/
+.tts-controls button {
+  font-size: 1.2em;
+  padding: 0.3em;
+  margin-left: 0.2em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 
 .tts-controls button:hover {
-  background-color: #ddd;
+  background-color: #eee; /* #ddd */
   border-radius: 4px;
 }
 
